@@ -1,0 +1,49 @@
+@import "./variables";
+
+#masthead {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  flex-grow: 1;
+  padding: 5px;
+  border-bottom: $solid-border;
+  position: fixed;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.site-branding,
+#site-navigation {
+  height: $header-height;
+  justify-self: flex-start;
+}
+
+.site-branding svg {
+  height: 100%;
+  width: 50px;
+}
+.site-branding {
+  display: flex;
+  justify-content: flex-start;
+  flex-grow: 1;
+}
+
+#site-navigation {
+  width: auto;
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+
+#primary-menu ul li a {
+  margin: 0px;
+}
+
+#primary-menu {
+  display: flex;
+  align-items: center;
+}
+
+.entry-title {
+  margin-top: 48px;
+}

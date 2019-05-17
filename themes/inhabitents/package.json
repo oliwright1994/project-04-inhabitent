@@ -1,0 +1,27 @@
+{
+  "name": "Inhabitent",
+  "version": "1.0.0",
+  "description": "\"Inhabitent app project for RED\"",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Oliver Wright",
+  "license": "ISC",
+  "dependencies": {
+    "gulp-cli": "^2.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-css-scss": "^0.1.0",
+    "gulp-refresh": "^1.1.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-terser": "^1.1.7",
+    "node-sass": "^4.12.0",
+    "terser": "^3.17.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}

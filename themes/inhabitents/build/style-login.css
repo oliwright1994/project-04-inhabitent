@@ -1,0 +1,23 @@
+body {
+  background-image: url(../images/dark-wood@2x.png);
+  background-repeat: repeat;
+}
+
+#loginform {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+#wp-submit {
+  background-color: #d99054;
+  border-color: #db8238;
+  box-shadow: 0px 1px 0px #d36c18;
+  text-shadow: -1px 0px 1px #d36c18;
+}
+
+body.login div#login p#nav a:hover {
+  color: #248a83;
+}
+
+body.login div#login p#backtoblog a:hover {
+  color: #248a83;
+}
