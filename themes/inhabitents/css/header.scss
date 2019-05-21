@@ -1,15 +1,36 @@
 @import "./variables";
 
-#masthead {
+.site-header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   flex-grow: 1;
-  padding: 5px;
+  padding: 5px 12%;
   border-bottom: $solid-border;
   position: fixed;
   background: rgba(255, 255, 255, 0.85);
+  z-index: 10;
+  height: 50px;
+}
+
+.site-header-static {
+  background: transparent;
+  border-bottom: none;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  z-index: 15;
+  #primary-menu li a {
+    color: white;
+  }
+  #primary-menu li a:hover {
+    color: $yellow-brand-color;
+  }
+  .site-branding svg path {
+    fill: white;
+  }
 }
 
 .site-branding,
@@ -35,7 +56,7 @@
   flex-grow: 1;
 }
 
-#primary-menu ul li a {
+#primary-menu li a {
   margin: 0px;
 }
 
@@ -46,4 +67,30 @@
 
 .entry-title {
   margin-top: 48px;
+}
+
+.menu-menu-1-container {
+  display: flex;
+  align-items: center;
+}
+
+.screen-reader-skip-content {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.85);
+  font-family: $accent-font;
+}
+
+.screen-reader-skip-content:focus {
+  clip: auto !important;
+  display: block;
+  height: auto;
+  left: 20%;
+  top: 30px;
+  width: auto;
+  z-index: 100;
+  padding: 5px;
 }

@@ -13,6 +13,7 @@
  */
 
 get_header();
+get_footer();
 ?>
 
 <!-- FULL PAGE HEADER BLOCK

@@ -1,0 +1,65 @@
+@import "./variables";
+
+#colophon {
+  background: url("../images/dark-wood.png");
+  background-repeat: repeat;
+  padding-top: 3rem;
+}
+.footer-container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+#colophon .footer-logo img {
+  height: 60px;
+  padding-top: 1rem;
+}
+
+.footer-logo {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-container section {
+  min-width: 20%;
+  padding: 0 2rem;
+}
+
+#colophon .widget-title {
+  text-transform: uppercase;
+  color: $orange-brand-color;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+.footer-container section .textwidget p {
+  color: white;
+}
+
+.footer-container section .textwidget span {
+  font-weight: bold;
+}
+#colophon a,
+#colophon i {
+  color: white;
+}
+
+#colophon a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+#colophon .social-media-icon-links a {
+  margin-right: 0.5em;
+  font-size: 1.5rem;
+}
+
+.site-info {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: $accent-font;
+  text-transform: uppercase;
+}

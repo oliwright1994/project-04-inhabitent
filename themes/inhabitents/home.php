@@ -14,6 +14,7 @@
 
 get_header();
 ?>
+
 <!--
 FULL PAGE BLOCK
 4X SHOP STUFF

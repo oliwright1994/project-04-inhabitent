@@ -1,0 +1,128 @@
+@import "./variables";
+
+.entry-header img {
+  height: 100%;
+  object-fit: cover;
+  border: 0;
+}
+
+.post-thumbnail {
+  overflow: hidden;
+}
+
+.entry-header {
+  position: relative;
+
+  overflow: hidden;
+}
+
+.entry-title {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-top: 1.5rem;
+  background: $green-brand-color;
+  color: white;
+  text-transform: uppercase;
+  padding: 0.5rem 2rem;
+  font-size: 2rem;
+  max-width: 75%;
+  letter-spacing: 2px;
+}
+
+.entry-meta {
+  position: absolute;
+  right: 0;
+  bottom: 6px;
+  background: $green-brand-color;
+  color: white;
+  font-family: $accent-font;
+  text-transform: uppercase;
+  padding: 5px;
+  letter-spacing: 1px;
+}
+
+.posted-on a,
+.author a {
+  color: white;
+}
+
+.entry-footer span {
+  margin-right: 1rem;
+  text-transform: uppercase;
+  font-family: $accent-font;
+}
+
+.social-media a {
+  display: inline-block;
+  border: 1px solid black;
+  color: black;
+  text-transform: uppercase;
+  font-family: $accent-font;
+  padding: 0.5rem 1.5rem;
+}
+
+.social-media a:hover {
+  border: 1px solid $green-brand-color;
+  color: white;
+  background: $green-brand-color;
+}
+
+#content-sidebar-layout {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 0 2rem;
+  width: 1120px;
+  padding-top: 50px;
+  margin: 0 auto;
+}
+
+#primary {
+  padding-top: 2.5em;
+  grid-column: 1 / 1;
+}
+#secondary {
+  grid-column: 2 / 2;
+  padding: 2em 0px 4em 4em;
+  border-left: $solid-border;
+  min-width: 25vw;
+}
+
+#secondary h2 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+#secondary span {
+  font-weight: bold;
+}
+
+#secondary i {
+  margin-right: 0.5em;
+}
+
+#secondary p {
+  margin: 2rem 0px;
+}
+
+#secondary a {
+  margin-bottom: 1rem;
+}
+
+#secondary ul {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links {
+  font-family: $accent-font;
+  text-transform: uppercase;
+}
+.nav-next a::after {
+  content: "\2192";
+  color: $purple-brand-color;
+}
+.nav-previous a::before {
+  content: "\2190";
+  color: $purple-brand-color;
+}

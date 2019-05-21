@@ -1,5 +1,5 @@
 body {
-  background-image: url(../images/dark-wood@2x.png);
+  background-image: url(../images/dark-wood.png);
   background-repeat: repeat;
 }
 
@@ -20,4 +20,14 @@ body.login div#login p#nav a:hover {
 
 body.login div#login p#backtoblog a:hover {
   color: #248a83;
+}
+
+body.login div#login h1 a:focus {
+  outline-color: #248a83;
+  box-shadow: 0 0 0 1px #248a83, 0 0 2px 1px #248a83;
+}
+
+body.login div#login h1 {
+  display: flex;
+  align-items: center;
 }

@@ -1,0 +1,28 @@
+@import "./variables";
+
+.entry-header-no-sidebar {
+  width: 800px;
+  margin: 2rem auto;
+  .entry-title {
+    position: static;
+    color: rgb(64, 64, 64);
+    background: none;
+    font-size: 2.5rem;
+    width: 800px;
+    padding: 0;
+  }
+  .byline {
+    font-family: $accent-font;
+    color: rgb(64, 64, 64);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    .author a {
+      color: rgb(64, 64, 64);
+    }
+  }
+}
+
+.social-media {
+  width: 800px;
+  margin: 2rem auto 4rem auto;
+}

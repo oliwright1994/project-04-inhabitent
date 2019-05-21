@@ -1,0 +1,12 @@
+@import "./variables";
+
+form label {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-family: $accent-font;
+  font-size: 1rem;
+}
+
+label .required {
+  color: $orange-brand-color;
+}
