@@ -8,6 +8,24 @@ form label {
 label .required {
   color: #d99054;
 }
+.home-logo-container {
+  display: flex;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.home-logo-container img {
+  height: 275px;
+  width: 275px;
+}
+
+.post-40 .entry-content h2 {
+  font-weight: 400;
+}
 #colophon {
   background: url("../images/dark-wood.png");
   background-repeat: repeat;
@@ -170,6 +188,36 @@ label .required {
   width: auto;
   z-index: 100;
   padding: 5px;
+}
+.entry-title a {
+  color: white;
+}
+
+.entry-title a:hover {
+  color: #f0e4d1;
+}
+
+.read-more {
+  width: 800px;
+  margin: 2rem auto;
+}
+
+.read-more a {
+  color: black;
+  padding: 0.75rem 1.5rem;
+  border: solid 1px black;
+  font-family: "Novecento Sans Web";
+  text-transform: uppercase;
+}
+
+.read-more a:hover {
+  background: #248a83;
+  color: white;
+  border: none;
+}
+
+.read-more a::after {
+  content: "\2192";
 }
 /*!
 Theme Name: Inhabitents
@@ -1315,6 +1363,10 @@ object {
   font-size: 2rem;
   max-width: 75%;
   letter-spacing: 2px;
+}
+
+.entry-title a {
+  color: white;
 }
 
 .entry-meta {
