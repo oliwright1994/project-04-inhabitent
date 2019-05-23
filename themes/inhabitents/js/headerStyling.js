@@ -1,5 +1,5 @@
 const header = document.querySelector("#masthead");
-const contentDiv = document.getElementById("no-sidebar-page-layout");
+const contentDiv = document.getElementById("content").firstElementChild;
 let differentTopBarRequired = false;
 
 if (

@@ -70,13 +70,13 @@
 				<?php
 			else :
 				?>
-																					<p class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></p>
+																														<p class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></p>
 				<?php
 			endif;
 			$inhabitents_description = get_bloginfo('description', 'display');
 			if ($inhabitents_description || is_customize_preview()) :
 				?>
-																					<p class="site-description"><?php echo $inhabitents_description; /* WPCS: xss ok. */ ?></p>
+																														<p class="site-description"><?php echo $inhabitents_description; /* WPCS: xss ok. */ ?></p>
 				<?php endif; ?> -->
 			</div><!-- .site-branding -->
 
@@ -86,8 +86,17 @@
 				wp_nav_menu(array(
 					'theme_location' => 'menu-1',
 					'menu_id'        => 'primary-menu',
-				));
-				?>
+				)); ?>
+				<form role="search" method="get" class="search-form" action="<?php echo home_url('/'); ?>">
+					<fieldset>
+						<button type='button' class="search-button">
+							<i class="fa fa-search"></i>
+						</button>
+						<label id="search-box">
+							<input type="search" class="search-field" placeholder="Type and hit enter..." value="" name="s" title="Search for:">
+						</label>
+					</fieldset>
+				</form>
 			</nav><!-- #site-navigation -->
 		</header><!-- #masthead -->
 

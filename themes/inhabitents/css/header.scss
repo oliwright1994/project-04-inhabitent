@@ -31,6 +31,17 @@
   .site-branding svg path {
     fill: white;
   }
+  #site-navigation form fieldset #search-box input::placeholder {
+    color: $yellow-brand-color;
+  }
+  #site-navigation form fieldset .search-button {
+    i {
+      color: white;
+    }
+    :hover {
+      color: $yellow-brand-color;
+    }
+  }
 }
 
 .site-branding,
@@ -93,4 +104,40 @@
   width: auto;
   z-index: 100;
   padding: 5px;
+}
+
+.search-form fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+.search-button {
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  i {
+    color: $green-brand-color;
+  }
+  :hover {
+    color: $purple-brand-color;
+  }
+}
+.search-button:hover {
+  background: none;
+}
+
+.search-button:focus {
+  outline: none;
+}
+#search-box input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  display: none;
+  width: 200px;
+}
+
+#search-box input::placeholder {
+  text-transform: uppercase;
 }

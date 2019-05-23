@@ -1,3 +1,19 @@
+.widget_recent_entries ul,
+.widget_categories ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.widget_recent_entries h2,
+.widget_categories h2 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.not-found header {
+  text-transform: uppercase;
+}
 form label {
   text-transform: uppercase;
   font-size: 1rem;
@@ -127,6 +143,18 @@ label .required {
   fill: white;
 }
 
+.site-header-static #site-navigation form fieldset #search-box input::placeholder {
+  color: #f0e4d1;
+}
+
+.site-header-static #site-navigation form fieldset .search-button i {
+  color: white;
+}
+
+.site-header-static #site-navigation form fieldset .search-button :hover {
+  color: #f0e4d1;
+}
+
 .site-branding,
 #site-navigation {
   height: 2em;
@@ -189,6 +217,47 @@ label .required {
   z-index: 100;
   padding: 5px;
 }
+
+.search-form fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.search-button {
+  background: none;
+  border: none;
+  padding: 0.5rem;
+}
+
+.search-button i {
+  color: #248a83;
+}
+
+.search-button :hover {
+  color: #2f1339;
+}
+
+.search-button:hover {
+  background: none;
+}
+
+.search-button:focus {
+  outline: none;
+}
+
+#search-box input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  display: none;
+  width: 200px;
+}
+
+#search-box input::placeholder {
+  text-transform: uppercase;
+}
 .entry-title a {
   color: white;
 }
@@ -197,12 +266,12 @@ label .required {
   color: #f0e4d1;
 }
 
-.read-more {
+.entry-content .read-more {
   width: 800px;
   margin: 2rem auto;
 }
 
-.read-more a {
+.entry-content .read-more a {
   color: black;
   padding: 0.75rem 1.5rem;
   border: solid 1px black;
@@ -210,14 +279,29 @@ label .required {
   text-transform: uppercase;
 }
 
-.read-more a:hover {
+.entry-content .read-more a:hover {
   background: #248a83;
   color: white;
   border: none;
 }
 
-.read-more a::after {
+.entry-content .read-more a::after {
   content: "\2192";
+}
+
+.custom-html-widget p a {
+  color: #248a83;
+}
+
+.archive-title {
+  border-bottom: 1px solid #e1e1e1;
+  margin-top: 0;
+  font-size: 3rem;
+  padding-bottom: 1.5rem;
+}
+
+.archive-title h1 {
+  text-transform: uppercase;
 }
 /*!
 Theme Name: Inhabitents
@@ -1314,7 +1398,7 @@ object {
   font-size: 1.5rem;
 }
 
-.entry-header-no-sidebar .byline .author a {
+.entry-header-no-sidebar .byline .author > a {
   color: #404040;
 }
 
@@ -1336,6 +1420,7 @@ object {
 #wpgmza_map {
   margin-bottom: 2rem;
 }
+
 .entry-header img {
   height: 100%;
   object-fit: cover;
@@ -1365,10 +1450,6 @@ object {
   letter-spacing: 2px;
 }
 
-.entry-title a {
-  color: white;
-}
-
 .entry-meta {
   position: absolute;
   right: 0;
@@ -1382,7 +1463,7 @@ object {
 }
 
 .posted-on a,
-.author a {
+.author > a {
   color: white;
 }
 

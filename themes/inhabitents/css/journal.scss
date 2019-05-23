@@ -7,7 +7,7 @@
   color: $yellow-brand-color;
 }
 
-.read-more {
+.entry-content .read-more {
   width: 800px;
   margin: 2rem auto;
   a {
@@ -24,5 +24,19 @@
   }
   a::after {
     content: "\2192";
+  }
+}
+
+.custom-html-widget p a {
+  color: $green-brand-color;
+}
+
+.archive-title {
+  border-bottom: $solid-border;
+  margin-top: 0;
+  font-size: 3rem;
+  padding-bottom: 1.5rem;
+  h1 {
+    text-transform: uppercase;
   }
 }
