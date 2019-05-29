@@ -1,0 +1,51 @@
+@import "./variables";
+
+.product-container {
+  display: grid;
+  width: 1120px;
+  margin: 3rem auto;
+  max-height: 75vh;
+  grid-template-columns: 50% 50%;
+  grid-gap: 30px;
+}
+.product-image-wrapper {
+  grid-column: 1 /2;
+  height: auto;
+  width: 100%;
+  img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+  }
+}
+.product-content-wrapper {
+  grid-column: 2 /3;
+}
+.entry-header {
+  .product-title {
+    position: static;
+    padding: 0;
+    margin: 0 0 0.2rem 0;
+    color: $orange-brand-color;
+    background: none;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  .product-price {
+    margin: 0 0 1.5rem 0;
+    padding: 0;
+    text-align: left;
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+  .product-price::before {
+    content: "\0024";
+  }
+}
+// .entry-content {
+// p {
+//   margin: 0px;
+//   line-height: 1.5rem;
+// }
+

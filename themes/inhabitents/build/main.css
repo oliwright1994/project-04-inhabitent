@@ -14,6 +14,30 @@
 .not-found header {
   text-transform: uppercase;
 }
+.adventure-archive-grid {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: calc(50%-20px);
+  margin: 5rem auto;
+  width: 1120px;
+  height: 1120px;
+}
+
+.adventure-archive-header {
+  color: #404040;
+  text-transform: uppercase;
+  padding: 2rem 0;
+  border-bottom: 1px dashed #c8c8c8;
+  text-align: center;
+  margin: 0 auto 2rem auto;
+  width: 1120px;
+  letter-spacing: 2px;
+}
+
+.type-adventure img {
+  height: 100vh;
+}
 form label {
   text-transform: uppercase;
   font-size: 1rem;
@@ -23,24 +47,6 @@ form label {
 
 label .required {
   color: #d99054;
-}
-.home-logo-container {
-  display: flex;
-  position: absolute;
-  height: 100vh;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  background: rgba(0, 0, 0, 0.4);
-}
-
-.home-logo-container img {
-  height: 275px;
-  width: 275px;
-}
-
-.post-40 .entry-content h2 {
-  font-weight: 400;
 }
 #colophon {
   background: url("../images/dark-wood.png");
@@ -107,6 +113,279 @@ label .required {
   font-family: "Novecento Sans Web";
   text-transform: uppercase;
 }
+.home-logo-container {
+  display: flex;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.home-logo-container img {
+  height: 275px;
+  width: 275px;
+}
+
+.post-40 .entry-content h2 {
+  font-weight: 400;
+}
+
+.recent-articles-container {
+  width: 1120px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(min-content, max-content);
+  grid-gap: 20px;
+  margin: 0 auto;
+}
+
+.recent-article-singular {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e1e1e1;
+  align-items: flex-start;
+  min-height: 420px;
+}
+
+.recent-article-singular .post-date {
+  margin: 0.5em;
+  font-size: 0.75rem;
+  color: #404040;
+}
+
+.recent-article-singular .post-date a {
+  color: #404040;
+}
+
+.recent-article-singular .recent-article-title {
+  color: #248a83;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin: 0.5em;
+  min-height: 56px;
+  font-family: "Novecento Sans Web";
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.recent-article-singular .recent-article-title:hover {
+  color: #2f1339;
+}
+
+.recent-article-singular .post-thumbnail-wrapper {
+  width: 100%;
+  height: 250px;
+  border-bottom: 5px solid #e1e1e1;
+}
+
+.recent-article-singular .post-thumbnail-wrapper img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.read-entry {
+  box-sizing: border-box;
+  margin-left: 0.5em;
+  margin-top: 0.5rem;
+}
+
+.read-entry a {
+  color: black;
+  padding: 0.75rem 1.5rem;
+  border: solid 1px black;
+  font-family: "Novecento Sans Web";
+  text-transform: uppercase;
+}
+
+.read-entry a:hover {
+  background: #248a83;
+  color: white;
+  border: none;
+}
+
+.recent-adventures-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 50% 50%;
+  grid-gap: 20px;
+  margin: 2rem auto;
+  width: 1120px;
+  height: 550px;
+}
+
+.recent-adventures-container :nth-child(1) {
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+
+.recent-adventures-container :nth-child(2) {
+  grid-column: 2/4;
+  grid-row: 1/2;
+}
+
+.recent-adventures-container :nth-child(2) .recent-adventures-text .recent-adventure-title {
+  font-size: 2.2rem;
+}
+
+.recent-adventures-container :nth-child(3) {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.recent-adventures-container :nth-child(3) .recent-adventures-text .recent-adventure-title {
+  font-size: 1.6rem;
+}
+
+.recent-adventures-container :nth-child(4) {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+.recent-adventures-container :nth-child(4) .recent-adventures-text .recent-adventure-title {
+  font-size: 1.6rem;
+}
+
+.recent-adventure-singular {
+  position: relative;
+}
+
+.recent-adventure-singular .recent-adventures-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 2.5rem;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.recent-adventure-singular .recent-adventures-text .recent-adventure-title {
+  font-size: 3rem;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.recent-adventure-singular .post-thumbnail-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.recent-adventure-singular .post-thumbnail-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.recent-adventure-singular
+.recent-adventures-text
+.recent-adventure-title:hover {
+  color: #f0e4d1;
+}
+
+.read-more-adventure a {
+  color: white;
+  font-family: "Novecento Sans Web";
+  text-transform: uppercase;
+  border: solid 1px white;
+  padding: 0.5rem 1rem;
+}
+
+.read-more-adventure {
+  margin-top: 2rem;
+}
+
+.recent-adventures-container + .read-more.adventures {
+  margin: 4rem auto;
+  display: flex;
+  width: 1120px;
+  justify-content: flex-start;
+}
+
+.recent-adventures-container + .read-more.adventures a {
+  color: white;
+  background: #248a83;
+  font-size: 1.2rem;
+  border: none;
+}
+
+.recent-adventures-container + .read-more.adventures a:hover {
+  background: #185f5a;
+}
+
+.recent-articles-container + h2 {
+  font-weight: 400;
+}
+
+.read-more-adventure a:hover {
+  background: #248a83;
+  border-color: #248a83;
+  color: white;
+}
+
+.entry-content .read-more.adventures a::after {
+  content: none;
+}
+
+.shop-stuff-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 15px;
+  width: 1120px;
+  margin: 2rem auto;
+  padding: 0;
+}
+
+.front-page-shop-category {
+  border: 1px solid #e1e1e1;
+  border-top: 5px solid #e1e1e1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.front-page-shop-category .shop-svg {
+  height: 75px;
+  width: auto;
+}
+
+.front-page-shop-category p {
+  text-align: center;
+  line-height: 1.75;
+  display: block;
+}
+
+.front-page-shop-category a {
+  font-family: "Novecento Sans Web";
+  color: white;
+  background: #248a83;
+  padding: 0.75rem 1.5rem;
+  text-transform: uppercase;
+  margin-top: auto;
+}
+
+.front-page-shop-category a:hover {
+  background: #185f5a;
+  color: white;
+}
+
+.front-page-shop-category:hover {
+  border-color: #d99054;
+}
+
+.shop-stuff-categories > h2 {
+  font-weight: 400;
+  margin: 4rem auto;
+}
+
+.shop-stuff-categories + h2 {
+  font-weight: 400;
+  margin: 4rem auto;
+}
 .site-header {
   display: flex;
   flex-direction: row;
@@ -133,6 +412,7 @@ label .required {
 
 .site-header-static #primary-menu li a {
   color: white;
+  text-shadow: 1px 1px 2px #323232;
 }
 
 .site-header-static #primary-menu li a:hover {
@@ -282,7 +562,7 @@ label .required {
 .entry-content .read-more a:hover {
   background: #248a83;
   color: white;
-  border: none;
+  border-color: #248a83;
 }
 
 .entry-content .read-more a::after {
@@ -1420,7 +1700,204 @@ object {
 #wpgmza_map {
   margin-bottom: 2rem;
 }
+.contact-info-widget-title,
+.business-hours-widget-title {
+  color: #d99054;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
 
+.business_hours_widget p {
+  color: white;
+}
+
+.business_hours_widget p .bold {
+  font-weight: bold;
+}
+
+.contact_info_widget_footer a {
+  line-height: 2;
+}
+
+.contact_info_widget_footer i {
+  margin-right: 0.75rem;
+}
+
+.contact_info_widget_footer .social-media-widget-icons {
+  font-size: 1.5rem;
+}
+
+#secondary .contact_info_widget_sidebar {
+  margin-top: 3.5rem;
+}
+
+#secondary .contact_info_widget_sidebar h1 {
+  color: #404040;
+  font-size: 1.5rem;
+  margin-bottom: 0rem;
+}
+
+#secondary .contact_info_widget_sidebar a {
+  line-height: 3;
+}
+
+#secondary .contact_info_widget_sidebar i {
+  margin-right: 0.75rem;
+}
+
+#secondary .contact_info_widget_sidebar p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#secondary .business_hours_widget .business-hours-widget-title {
+  color: #404040;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#secondary .business_hours_widget p {
+  color: #404040;
+  margin: 1rem 0;
+}
+
+#secondary .widget_archive {
+  margin-top: 3.5rem;
+}
+.product-archive-grid {
+  display: grid;
+  width: 1120px;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: auto;
+  margin: 2rem auto;
+}
+
+.product-grid-item {
+  border: 1px solid #e1e1e1;
+  max-width: 100%;
+}
+
+.product-grid-item .product-image-wrapper {
+  max-width: 100%;
+  height: 250px;
+  border-bottom: 5px solid #e1e1e1;
+  display: block;
+}
+
+.product-grid-item .product-image-wrapper img {
+  max-width: 100%;
+  object-fit: cover;
+  height: 250px;
+}
+
+.product-info {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  margin: 0 1rem;
+}
+
+.product-info .product-title,
+.product-info .product-price {
+  background: white;
+  z-index: 10;
+  text-transform: capitalize;
+}
+
+.product-info #product-elipses {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  text-align: center;
+}
+
+.product-archive-header {
+  color: #404040;
+  text-transform: uppercase;
+  padding: 2rem 0;
+  border-bottom: 1px dashed #c8c8c8;
+  text-align: center;
+  margin: 0 auto 3rem auto;
+  width: 1120px;
+  letter-spacing: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-categories ul {
+  display: flex;
+  margin: 0 auto;
+  width: 1120px;
+  justify-content: center;
+}
+
+.product-categories ul li {
+  margin: 0 1.2rem;
+}
+
+.product-categories ul li a {
+  font-family: "Novecento Sans Web";
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+#product-type-description {
+  text-transform: none;
+  letter-spacing: 0;
+  margin: 0;
+}
+.product-container {
+  display: grid;
+  width: 1120px;
+  margin: 3rem auto;
+  max-height: 75vh;
+  grid-template-columns: 50% 50%;
+  grid-gap: 30px;
+}
+
+.product-image-wrapper {
+  grid-column: 1 /2;
+  height: auto;
+  width: 100%;
+}
+
+.product-image-wrapper img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.product-content-wrapper {
+  grid-column: 2 /3;
+}
+
+.entry-header .product-title {
+  position: static;
+  padding: 0;
+  margin: 0 0 0.2rem 0;
+  color: #d99054;
+  background: none;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.entry-header .product-price {
+  margin: 0 0 1.5rem 0;
+  padding: 0;
+  text-align: left;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.entry-header .product-price::before {
+  content: "\0024";
+}
 .entry-header img {
   height: 100%;
   object-fit: cover;

@@ -22,12 +22,9 @@ get_header();
 				the_post_navigation(); ?>
 
 				<footer class="entry-footer">
-					<?php inhabitents_entry_footer(); ?>
-					<div class="social-media">
-						<a href=""><i class="fab fa-facebook-f"></i>Like</a>
-						<a href=""><i class="fab fa-twitter"></i>Tweet</a>
-						<a href=""><i class="fab fa-pinterest"></i>Pin</a>
-					</div>
+					<?php inhabitents_entry_footer();
+					get_template_part('template-parts/content', 'social-media');
+					?>
 				</footer><!-- .entry-footer -->
 
 				<?php // If comments are open or we have at least one comment, load up the comment template.

@@ -20,18 +20,14 @@ get_header();
 				?>
 				<footer class="entry-footer">
 					<?php inhabitents_entry_footer(); ?>
-					<div class="social-media">
-						<a href=""><i class="fab fa-facebook-f"></i>Like</a>
-						<a href=""><i class="fab fa-twitter"></i>Tweet</a>
-						<a href=""><i class="fab fa-pinterest"></i>Pin</a>
-					</div>
-				</footer><!-- .entry-footer -->
+		</div>
+		</footer><!-- .entry-footer -->
 
-			<?php // If comments are open or we have at least one comment, load up the comment template.
-		endwhile; // End of the loop.
-		?>
-		</main><!-- #main -->
-	</div><!-- #primary -->
+	<?php // If comments are open or we have at least one comment, load up the comment template.
+endwhile; // End of the loop.
+?>
+	</main><!-- #main -->
+</div><!-- #primary -->
 
-	<?php
-	get_footer();
+<?php
+get_footer();

@@ -13,7 +13,6 @@ get_header();
 
         get_template_part('template-parts/content', 'front-page');
 
-
       endwhile; // End of the loop.
       ?>
     </main><!-- #main -->

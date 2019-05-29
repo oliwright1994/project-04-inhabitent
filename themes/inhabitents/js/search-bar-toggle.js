@@ -11,6 +11,6 @@ jQuery(document).ready(e => {
   });
 
   jQuery(".search-field").focusout(e => {
-    jQuery(".search-field").toggle("fast");
+    jQuery(".search-field").toggle("medium");
   });
 });

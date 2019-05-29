@@ -20,7 +20,7 @@
   a:hover {
     background: $green-brand-color;
     color: white;
-    border: none;
+    border-color: $green-brand-color;
   }
   a::after {
     content: "\2192";

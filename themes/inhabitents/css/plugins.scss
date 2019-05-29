@@ -1,0 +1,65 @@
+@import "./variables";
+
+.contact-info-widget-title,
+.business-hours-widget-title {
+  color: $orange-brand-color;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+.business_hours_widget {
+  p {
+    color: white;
+    .bold {
+      font-weight: bold;
+    }
+  }
+}
+
+.contact_info_widget_footer {
+  a {
+    line-height: 2;
+  }
+  i {
+    margin-right: 0.75rem;
+  }
+  .social-media-widget-icons {
+    font-size: 1.5rem;
+  }
+}
+
+#secondary .contact_info_widget_sidebar {
+  margin-top: 3.5rem;
+  h1 {
+    color: rgb(64, 64, 64);
+    font-size: 1.5rem;
+    margin-bottom: 0rem;
+  }
+  a {
+    line-height: 3;
+  }
+  i {
+    margin-right: 0.75rem;
+  }
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+#secondary .business_hours_widget {
+  .business-hours-widget-title {
+    color: rgb(64, 64, 64);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  p {
+    color: rgb(64, 64, 64);
+    margin: 1rem 0;
+  }
+}
+
+#secondary .widget_archive {
+  margin-top: 3.5rem;
+}
